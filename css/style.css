@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* break point
+768px
+1024
+*/
+
+header{
+    width: 100%;
+    background-color: #0c131f;
+    pad: 10px;
+}
+
+#section-haut{
+    background-color: #0c131f;
+    font-size: 0.8rem;
+}
+
+#section-haut span:nth-last-child(2){
+    color: #8de8fe;
+}
+#section-centre{
+    height: 52%;
+    position: relative;
+}
+
+#barre-recherche{
+    height: 39%;
+}
+svg{
+    fill: aqua;
+}
+
+h1{
+    font-size: 1rem;
+    color: #fff;
+}
+footer{
+    background-color: #0c131f;
+}
+
+#bas-page{
+    background-color: #0c131f;
+    height: 10%;
+}
+
+/* barre de recherhce */
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    border-radius: 40px;
+}
+
+.search-box > .search-txt{
+    padding-left: 20px;
+}
+
+
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: white;
+    font-size: 16px;
+    width: 0;
+    padding: 12px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        height: 76vh;
+    }
+    #section-haut{
+        height: 9%;
+        color: #fff;
+        padding: 10px 0 0 10px;
+    }
+    #section-centre{
+        height: 52%;
+        background-image: url("/images/imageMobile.png");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #barre-recherche{
+        height: 39%;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    #img-recherche{
+        width: 100%;
+        position: relative;
+    }
+    #img-recherche img{
+        width: 100%;
+        position: absolute;
+        height: auto;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, 40%);
+    }
+
+    footer{
+        height: 100vh;
+    }
+    #bas-page{
+        background-color: #0c131f;
+        height: 10%;
+    }
+
+    /*barre de recherche */
+    .search-box{
+        height: 40px;
+    }
+    
+    .search-box > .search-txt{
+        width: 240px;
+        padding-left: 20px;
+    }
+       
+    .search-btn{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .search-txt{
+        font-size: 1rem;
+        width: 0;
+        padding: 12px 0;
+    }
+} 
+
+
